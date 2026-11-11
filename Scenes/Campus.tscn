@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://br3x5wpbanwt4"]
+
+[ext_resource type="PackedScene" uid="uid://63cr5ex48yt" path="res://Scenes/Gaby.tscn" id="1_xxwoi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ostoq"]
+size = Vector2(2826, 189)
+
+[node name="Campus" type="Node2D" unique_id=1542255716]
+
+[node name="Gaby" parent="." unique_id=1464351694 instance=ExtResource("1_xxwoi")]
+position = Vector2(232, 511)
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=1704023635]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=898136016]
+position = Vector2(1411, 663)
+shape = SubResource("RectangleShape2D_ostoq")
+debug_color = Color(0.12924469, 0.5960877, 0.69408184, 0.41960785)
+
+[node name="Polygon2D" type="Polygon2D" parent="Floor" unique_id=1712303587]
+color = Color(0.3435969, 0.23399383, 0.07795549, 1)
