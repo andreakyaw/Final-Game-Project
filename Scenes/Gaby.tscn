@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://63cr5ex48yt"]
+
+[ext_resource type="Script" uid="uid://doag68cc2ovwe" path="res://Scripts/gaby.gd" id="1_crp1h"]
+[ext_resource type="Texture2D" uid="uid://drsef2k6pno2d" path="res://Sprites/Gaby.png" id="1_wh2e2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ostoq"]
+radius = 192.0
+height = 730.24
+
+[node name="Gaby" type="CharacterBody2D" unique_id=1464351694]
+script = ExtResource("1_crp1h")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=343411949]
+position = Vector2(-8, -408)
+texture = ExtResource("1_wh2e2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1535202180]
+position = Vector2(240, -328)
+shape = SubResource("CapsuleShape2D_ostoq")
